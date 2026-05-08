@@ -60,7 +60,7 @@ section.active{display:block}
 .hero-left{flex:1.2;max-width:600px;animation:fadeUp .8s ease both;min-width:0}
 .eyebrow{font-size:.95rem;color:var(--accent2);font-weight:500;letter-spacing:1px;margin-bottom:.9rem}
 .hero-name{font-family:var(--fh);font-size:clamp(2.2rem,3.5vw,3.5rem);font-weight:800;line-height:1.05;color:#fff;margin-bottom:1rem;white-space:nowrap}
-.hero-name .outline{-webkit-text-stroke:2px var(--accent);color:transparent}
+.hero-name .outline{background:linear-gradient(135deg,#fff 30%,#6eb8ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:1.05rem;color:var(--gray);margin-bottom:1.4rem;line-height:1.7}
 .tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:1.8rem}
 .tag{background:rgba(46,139,255,.1);border:1px solid rgba(46,139,255,.25);color:var(--accent);padding:.3rem .85rem;border-radius:50px;font-size:.78rem;font-weight:600}
@@ -238,6 +238,23 @@ footer p{color:var(--gray);font-size:.82rem}
   .contact-grid{grid-template-columns:1fr}
   footer{padding:1.5rem 1.2rem}
 }
+
+.tech-stack-card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:1.3rem;margin-top:2rem;box-shadow:0 15px 40px rgba(0,0,0,.3);
+  animation:fadeUp .8s .4s ease both;
+}
+.tech-stack-card h4{font-family:var(--fh);font-size:.95rem;color:#fff;margin-bottom:.9rem}
+.ts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
+.ts-item{
+  background:rgba(46,139,255,.08);border:1px solid var(--border);
+  border-radius:8px;padding:.55rem .4rem;
+  display:flex;flex-direction:column;align-items:center;gap:.3rem;
+  font-size:.75rem;color:var(--gray);font-weight:500;
+  transition:all .2s;
+}
+.ts-item:hover{transform:translateY(-2px);border-color:rgba(46,139,255,.4);background:rgba(46,139,255,.15);color:#fff}
+.ts-icon{font-size:1.3rem}
 </style>
 </head>
 <body>
@@ -305,6 +322,18 @@ footer p{color:var(--gray);font-size:.82rem}
     <div class="fbadge">☁️ Azure Certified</div>
     <div class="fbadge">🛡️ Cyber Security</div>
     <div class="fbadge">📊 ML Models</div>
+    
+    <div class="tech-stack-card">
+      <h4>🚀 Tech Stack</h4>
+      <div class="ts-grid">
+        <div class="ts-item"><span class="ts-icon">🐍</span><span>Python</span></div>
+        <div class="ts-item"><span class="ts-icon">⚛️</span><span>React</span></div>
+        <div class="ts-item"><span class="ts-icon">☁️</span><span>Azure</span></div>
+        <div class="ts-item"><span class="ts-icon">🤖</span><span>ML/AI</span></div>
+        <div class="ts-item"><span class="ts-icon">📊</span><span>SQL</span></div>
+        <div class="ts-item"><span class="ts-icon">🛡️</span><span>Security</span></div>
+      </div>
+    </div>
   </div>
   <div class="hl-grid">
       <div class="hl-card"><div class="hl-icon">🎓</div><h3>Strong Academic Foundation</h3><p>BSc (Hons) Second Class Upper + MSc IT with Data Analytics, University of the West of Scotland.</p></div>
