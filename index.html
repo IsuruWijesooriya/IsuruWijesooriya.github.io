@@ -240,21 +240,28 @@ footer p{color:var(--gray);font-size:.82rem}
 }
 
 .tech-stack-card{
-  background:var(--card);border:1px solid var(--border);border-radius:14px;
-  padding:1.3rem;margin-top:2rem;box-shadow:0 15px 40px rgba(0,0,0,.3);
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1rem 1.2rem;margin-top:1rem;box-shadow:0 10px 30px rgba(0,0,0,.2);
   animation:fadeUp .8s .4s ease both;
 }
-.tech-stack-card h4{font-family:var(--fh);font-size:.95rem;color:#fff;margin-bottom:.9rem}
-.ts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
+.tech-stack-card h4{font-family:var(--fh);font-size:.85rem;color:#fff;margin-bottom:.7rem}
+.ts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
 .ts-item{
   background:rgba(46,139,255,.08);border:1px solid var(--border);
-  border-radius:8px;padding:.55rem .4rem;
-  display:flex;flex-direction:column;align-items:center;gap:.3rem;
-  font-size:.75rem;color:var(--gray);font-weight:500;
+  border-radius:6px;padding:.45rem .3rem;
+  display:flex;flex-direction:row;align-items:center;justify-content:center;gap:.35rem;
+  font-size:.7rem;color:var(--gray);font-weight:500;
   transition:all .2s;
 }
 .ts-item:hover{transform:translateY(-2px);border-color:rgba(46,139,255,.4);background:rgba(46,139,255,.15);color:#fff}
-.ts-icon{font-size:1.3rem}
+.ts-icon{font-size:.95rem}
+
+.cert-row{display:flex;flex-wrap:wrap;gap:.5rem}
+.cert-pill{
+  background:rgba(46,139,255,.1);border:1px solid rgba(46,139,255,.3);
+  color:#6eb8ff;padding:.4rem .8rem;border-radius:50px;
+  font-size:.75rem;font-weight:600;
+}
 </style>
 </head>
 <body>
@@ -319,19 +326,13 @@ footer p{color:var(--gray);font-size:.82rem}
         <div><span class="cm"># R² Score: 0.94 🎯</span></div>
       </div>
     </div>
-    <div class="fbadge">☁️ Azure Certified</div>
-    <div class="fbadge">🛡️ Cyber Security</div>
-    <div class="fbadge">📊 ML Models</div>
-    
     <div class="tech-stack-card">
-      <h4>🚀 Tech Stack</h4>
-      <div class="ts-grid">
-        <div class="ts-item"><span class="ts-icon">🐍</span><span>Python</span></div>
-        <div class="ts-item"><span class="ts-icon">⚛️</span><span>React</span></div>
-        <div class="ts-item"><span class="ts-icon">☁️</span><span>Azure</span></div>
-        <div class="ts-item"><span class="ts-icon">🤖</span><span>ML/AI</span></div>
-        <div class="ts-item"><span class="ts-icon">📊</span><span>SQL</span></div>
-        <div class="ts-item"><span class="ts-icon">🛡️</span><span>Security</span></div>
+      <h4>🏆 Certifications</h4>
+      <div class="cert-row">
+        <span class="cert-pill">☁️ Azure Certified</span>
+        <span class="cert-pill">🛡️ Cyber Security</span>
+        <span class="cert-pill">📊 ML/AI</span>
+        <span class="cert-pill">🌐 AWS Cloud</span>
       </div>
     </div>
   </div>
